@@ -3,19 +3,18 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 
 	<modelVersion>4.0.0</modelVersion>
-
-	<groupId>dad.template</groupId>
-	<artifactId>JavaFX</artifactId>
+	<groupId>dad.javafx.proyecto.micv</groupId>
+	<artifactId>micv</artifactId>
 	<version>1.0.0</version>
 
-	<name>JavaFXProjectTemplate</name>
-	<description>Proyecto base en Eclipse para Maven con soporte para JavaFX 11</description>
+	<name>Proyecto micv</name>
+	<description>Proyecto amplio mi CV</description>
 
 	<properties>
-		<maven.compiler.target>11</maven.compiler.target>
-		<maven.compiler.source>11</maven.compiler.source>
+		<maven.compiler.target>14</maven.compiler.target>
+		<maven.compiler.source>14</maven.compiler.source>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>	
-		<exec.mainClass>dad.template.javafx.Main</exec.mainClass>
+		<exec.mainClass>dad.javafx.proyecto.micv.Main</exec.mainClass>
 	</properties>
 
 	<dependencies>
