@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+
+<SplitPane fx:id="view" dividerPositions="0.33, 0.66" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" orientation="VERTICAL" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <items>
+      <TitledPane collapsible="false" prefHeight="200.0" prefWidth="200.0" text="Teléfonos">
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+         <content>
+            <BorderPane prefHeight="200.0" prefWidth="200.0">
+               <right>
+                  <VBox prefHeight="200.0" prefWidth="70.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <Button fx:id="añadirTelefono" mnemonicParsing="false" prefWidth="60.0" text="Añadir" textAlignment="CENTER">
+                           <VBox.margin>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </VBox.margin>
+                        </Button>
+                        <Button fx:id="eliminarTelefono" mnemonicParsing="false" prefWidth="60.0" text="Eliminar" textAlignment="CENTER">
+                           <VBox.margin>
+                              <Insets bottom="5.0" left="5.0" right="5.0" />
+                           </VBox.margin>
+                        </Button>
+                     </children>
+                  </VBox>
+               </right>
+               <center>
+                  <TableView fx:id="telefonosTable" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                    <columns>
+                      <TableColumn prefWidth="110.0" text="Número" />
+                      <TableColumn prefWidth="110.0" text="Tipo" />
+                    </columns>
+                  </TableView>
+               </center>
+            </BorderPane>
+         </content>
+      </TitledPane>
+      <TitledPane collapsible="false" prefHeight="200.0" prefWidth="200.0" text="Direcciones de correo">
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+         <content>
+            <BorderPane prefHeight="200.0" prefWidth="200.0">
+               <right>
+                  <VBox prefHeight="200.0" prefWidth="70.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <Button fx:id="añadirEmail" mnemonicParsing="false" prefWidth="60.0" text="Añadir" textAlignment="CENTER">
+                           <VBox.margin>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </VBox.margin>
+                        </Button>
+                        <Button fx:id="eliminarEmail" mnemonicParsing="false" prefWidth="60.0" text="Eliminar" textAlignment="CENTER">
+                           <VBox.margin>
+                              <Insets bottom="5.0" left="5.0" right="5.0" />
+                           </VBox.margin>
+                        </Button>
+                     </children>
+                  </VBox>
+               </right>
+               <center>
+                  <TableView fx:id="correoTable" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                    <columns>
+                      <TableColumn prefWidth="270.0" text="E-mail" />
+                    </columns>
+                  </TableView>
+               </center>
+            </BorderPane>
+         </content>
+      </TitledPane>
+      <TitledPane collapsible="false" prefHeight="200.0" prefWidth="200.0" text="Webs">
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+         <content>
+            <BorderPane prefHeight="200.0" prefWidth="200.0">
+               <right>
+                  <VBox prefHeight="200.0" prefWidth="70.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <Button fx:id="añadirUrl" mnemonicParsing="false" prefWidth="60.0" text="Añadir" textAlignment="CENTER">
+                           <VBox.margin>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </VBox.margin>
+                        </Button>
+                        <Button fx:id="eliminarUrl" mnemonicParsing="false" prefWidth="60.0" text="Eliminar" textAlignment="CENTER">
+                           <VBox.margin>
+                              <Insets bottom="5.0" left="5.0" right="5.0" />
+                           </VBox.margin>
+                        </Button>
+                     </children>
+                  </VBox>
+               </right>
+               <center>
+                  <TableView fx:id="urlTable" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                    <columns>
+                      <TableColumn prefWidth="270.0" text="URL" />
+                    </columns>
+                  </TableView>
+               </center>
+            </BorderPane>
+         </content>
+      </TitledPane>
+   </items>
+</SplitPane>
