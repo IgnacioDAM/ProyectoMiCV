@@ -1,4 +1,4 @@
-package dad.javafx.proyecto.micv.model.Contacto;
+package dad.javafx.proyecto.micv.model.contacto;
 
 import javafx.beans.property.ListProperty;
 import javafx.beans.property.SimpleListProperty;

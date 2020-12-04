@@ -7,17 +7,16 @@
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.VBox?>
 
-
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<BorderPane fx:id="view" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
    <right>
       <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="70.0" BorderPane.alignment="CENTER">
          <children>
-            <Button fx:id="añadirFormacion" mnemonicParsing="false" prefWidth="60.0" text="Añadir">
+            <Button fx:id="añadirFormacion" mnemonicParsing="false" onAction="#onClickAñadir" prefWidth="60.0" text="Añadir">
                <VBox.margin>
                   <Insets left="5.0" right="5.0" top="5.0" />
                </VBox.margin>
             </Button>
-            <Button fx:id="eliminarFormacion" mnemonicParsing="false" prefWidth="60.0" text="Eliminar">
+            <Button fx:id="eliminarFormacion" mnemonicParsing="false" onAction="#onClickEliminar" prefWidth="60.0" text="Eliminar">
                <VBox.margin>
                   <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                </VBox.margin>
@@ -28,10 +27,10 @@
    <center>
       <TableView fx:id="formacionTable" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
         <columns>
-          <TableColumn prefWidth="75.0" text="Desde" />
-          <TableColumn prefWidth="75.0" text="Hasta" />
-            <TableColumn prefWidth="100.0" text="Denominación" />
-            <TableColumn prefWidth="75.0" text="Organizador" />
+          <TableColumn fx:id="desdeColumn" prefWidth="75.0" text="Desde" />
+          <TableColumn fx:id="hastaColumn" prefWidth="75.0" text="Hasta" />
+            <TableColumn fx:id="denominacionColumn" prefWidth="100.0" text="Denominación" />
+            <TableColumn fx:id="organizadorColumn" prefWidth="75.0" text="Organizador" />
         </columns>
          <BorderPane.margin>
             <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />

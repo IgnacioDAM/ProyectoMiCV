@@ -20,12 +20,12 @@
                <right>
                   <VBox prefHeight="200.0" prefWidth="70.0" BorderPane.alignment="CENTER">
                      <children>
-                        <Button fx:id="añadirTelefono" mnemonicParsing="false" prefWidth="60.0" text="Añadir" textAlignment="CENTER">
+                        <Button fx:id="añadirTelefono" mnemonicParsing="false" onAction="#onClickAñadirTelefono" prefWidth="60.0" text="Añadir" textAlignment="CENTER">
                            <VBox.margin>
                               <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                            </VBox.margin>
                         </Button>
-                        <Button fx:id="eliminarTelefono" mnemonicParsing="false" prefWidth="60.0" text="Eliminar" textAlignment="CENTER">
+                        <Button fx:id="eliminarTelefono" mnemonicParsing="false" onAction="#onClickEliminarTelefono" prefWidth="60.0" text="Eliminar" textAlignment="CENTER">
                            <VBox.margin>
                               <Insets bottom="5.0" left="5.0" right="5.0" />
                            </VBox.margin>
@@ -36,8 +36,8 @@
                <center>
                   <TableView fx:id="telefonosTable" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
                     <columns>
-                      <TableColumn prefWidth="110.0" text="Número" />
-                      <TableColumn prefWidth="110.0" text="Tipo" />
+                      <TableColumn fx:id="numeroColumn" prefWidth="110.0" text="Número" />
+                      <TableColumn fx:id="tipoColumn" prefWidth="110.0" text="Tipo" />
                     </columns>
                   </TableView>
                </center>
@@ -53,12 +53,12 @@
                <right>
                   <VBox prefHeight="200.0" prefWidth="70.0" BorderPane.alignment="CENTER">
                      <children>
-                        <Button fx:id="añadirEmail" mnemonicParsing="false" prefWidth="60.0" text="Añadir" textAlignment="CENTER">
+                        <Button fx:id="añadirEmail" mnemonicParsing="false" onAction="#onClickAñadirCorreo" prefWidth="60.0" text="Añadir" textAlignment="CENTER">
                            <VBox.margin>
                               <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                            </VBox.margin>
                         </Button>
-                        <Button fx:id="eliminarEmail" mnemonicParsing="false" prefWidth="60.0" text="Eliminar" textAlignment="CENTER">
+                        <Button fx:id="eliminarEmail" mnemonicParsing="false" onAction="#onClickEliminarCorreo" prefWidth="60.0" text="Eliminar" textAlignment="CENTER">
                            <VBox.margin>
                               <Insets bottom="5.0" left="5.0" right="5.0" />
                            </VBox.margin>
@@ -69,7 +69,7 @@
                <center>
                   <TableView fx:id="correoTable" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
                     <columns>
-                      <TableColumn prefWidth="270.0" text="E-mail" />
+                      <TableColumn fx:id="emailColumn" prefWidth="270.0" text="E-mail" />
                     </columns>
                   </TableView>
                </center>
@@ -85,12 +85,12 @@
                <right>
                   <VBox prefHeight="200.0" prefWidth="70.0" BorderPane.alignment="CENTER">
                      <children>
-                        <Button fx:id="añadirUrl" mnemonicParsing="false" prefWidth="60.0" text="Añadir" textAlignment="CENTER">
+                        <Button fx:id="añadirUrl" mnemonicParsing="false" onAction="#onClickAñadirUrl" prefWidth="60.0" text="Añadir" textAlignment="CENTER">
                            <VBox.margin>
                               <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                            </VBox.margin>
                         </Button>
-                        <Button fx:id="eliminarUrl" mnemonicParsing="false" prefWidth="60.0" text="Eliminar" textAlignment="CENTER">
+                        <Button fx:id="eliminarUrl" mnemonicParsing="false" onAction="#onClickEliminarUrl" prefWidth="60.0" text="Eliminar" textAlignment="CENTER">
                            <VBox.margin>
                               <Insets bottom="5.0" left="5.0" right="5.0" />
                            </VBox.margin>
@@ -101,7 +101,7 @@
                <center>
                   <TableView fx:id="urlTable" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
                     <columns>
-                      <TableColumn prefWidth="270.0" text="URL" />
+                      <TableColumn fx:id="urlColumn" prefWidth="270.0" text="URL" />
                     </columns>
                   </TableView>
                </center>

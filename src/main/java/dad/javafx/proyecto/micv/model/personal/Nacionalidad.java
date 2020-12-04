@@ -20,8 +20,13 @@ public class Nacionalidad {
 		return this.denominacionProperty().get();
 	}
 
-	public final void setDenominacion(final String denominacion) {
+	public final void setDenominacion(String denominacion) {
 		this.denominacionProperty().set(denominacion);
 	}
-
+	
+	@Override
+	public String toString() {
+		return denominacion.get();
+	}
+	
 }
